@@ -7,7 +7,6 @@
 }
 
                                     /* HEADER */
-
 #navHeader{
     height: 15vh;
     background-color: beige;
@@ -28,6 +27,34 @@
 #h1Main{
     text-align: center;
     color: red;
+    padding: 30px;
+}
+
+#h2Main{
+    text-align: center;
+    padding: 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.articleBDD{
+    background-color: brown;
+    width: 30%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.8s ease;
+}
+
+.articleBDD:hover{
+    color: rgb(229, 196, 89);
+    transform: scale(1.2);
 }
 
                                     /* FOOTER */
