@@ -1,14 +1,26 @@
 <?php
 
-require_once('../config/config.php');
+class IndexController{
 
-$DbConnection = new DbConn();
-$pdo = $DbConnection->connect();
+    public function index(){
+        require_once('../config/config.php');
 
-// récupérer les données de requete si besoin 
-$stmt = $pdo->query("SELECT * FROM article");
-// retourne dans un tableau tous les artciles 
-$articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $DbConnection = new DbConn();
+        $pdo = $DbConnection->connect();
 
-require_once('../templates/page/indexView.php');
+        // récupérer les données de requete si besoin 
+        $stmt = $pdo->query("SELECT * FROM article");
+        // retourne dans un tableau tous les artciles 
+        $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        require_once('../templates/page/indexView.php');
+    }
+    
+}
+
+$indexController = new IndexController();
+$indexController->index();
+
+
+
 
