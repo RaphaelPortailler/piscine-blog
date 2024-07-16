@@ -2,6 +2,9 @@
 
 require_once('../config/config.php');
 
+$DbConnection = new DbConn();
+$pdo = $DbConnection->connect();
+
 // récupérer les données de requete si besoin 
 $stmt = $pdo->query("SELECT * FROM article");
 // retourne dans un tableau tous les artciles 
