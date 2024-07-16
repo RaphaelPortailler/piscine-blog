@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+                                    /* HEADER */
+
+#navHeader{
+    height: 15vh;
+    background-color: beige;
+    padding: 30px;
+}
+
+#ulHeader{
+    display: flex;
+    justify-content: space-around;
+}
+
+.liHeader{
+    color: brown;
+}
+                                    /* MAIN */
+
+
+#h1Main{
+    text-align: center;
+    color: red;
+}
+
+                                    /* FOOTER */
+
+footer{
+    background-color: beige;
+    height: 15vh;
+    padding: 30px;
+}
+
+
+#ulFooter{
+    display: flex;
+    justify-content: space-around;
+}
