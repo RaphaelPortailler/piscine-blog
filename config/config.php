@@ -24,7 +24,7 @@ class DbConn{
             // echo "tout va bien navette";
             return $pdo;
         } catch (PDOException $e) { 
-            die("Erreur de connexion : " . $e->getMessage());
+            echo "Erreur de connexion : " . $e->getMessage();
         }
     }
 }
