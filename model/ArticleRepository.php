@@ -34,11 +34,9 @@ class ArticleRepository{
         // $stmt->bindParam(':date', $date);
 
         // view
-        if ($stmt->execute()) {
-            echo "Nouvel article ajouté avec succès";
-        } else {
-            echo "Erreur lors de l'ajout de l'article";
-        }
+        $isRequestOk = $stmt->execute();
+
+        return $isRequestOk;
     }
 
 

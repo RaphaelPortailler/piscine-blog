@@ -11,8 +11,6 @@ class IndexController{
 
         require_once('../templates/page/indexView.php');
     }
-
-
 }
 
 $indexController = new IndexController();

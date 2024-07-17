@@ -3,24 +3,16 @@
 require_once("../config/config.php");
 require_once("../model/ArticleRepository.php");
 
-class AddArticleController{
+class AddArticleController {
 
     public function addArticle(){
+        $title = "test";
+        $content = "test";
+        $date = "24-07-07";
 
-        // controller
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $date = new DateTime('NOW');
-
-        // j'instancie l'ArticleRepository
-        // et j'appelle la méthode insert
-        // on lui donnant les valeurs pour le titre, le contenu et la date
-        // que je veux insérer
         $articleRepository = new ArticleRepository();
-        $articleRepository->insert($title, $content, $date);
+        $isRequestOK = $articleRepository->insert($title, $content, $date);
+
+        require_once('../templates/page/addArticleView.php');
     }
-
 }
-
-$addArticleController = new AddArticleController();
-$addArticleController->addArticle();

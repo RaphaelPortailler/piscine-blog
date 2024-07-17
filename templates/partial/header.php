@@ -14,8 +14,8 @@
 
     <nav id="navHeader">
         <ul id="ulHeader">
-            <li class="liHeader">Test</li>
-            <li class="liHeader">Test</li>
+            <li class="liHeader"><a href="http://localhost/php/blog-piscine/controller/indexController.php">Index</a></li>
+            <li class="liHeader"><a href="">Ajout d'un article</a></li>
             <li class="liHeader">Test</li>
         </ul>
     </nav>
