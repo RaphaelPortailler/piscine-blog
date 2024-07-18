@@ -8,11 +8,11 @@
     <form method="post">
 
         <label> Titre
-            <input type="text" id="titre" name="titre" />
+            <input type="text" id="titre" name="titre"/>
         </label>
 
         <label> Contenu
-                <input type="text" id="content" name="content" />
+                <input type="text" id="content" name="content"/>
         </label>
 
         <input type="submit"/>

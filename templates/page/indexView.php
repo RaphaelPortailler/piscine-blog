@@ -9,10 +9,10 @@
             <?php foreach($articles as $article) { ?>
 
                 <article class="articleBlog">
-<!-- génère un lien pour accéder à la page qui affiche un article, en ajoutant l'id de l'article à la fin de l'url -->
-                <a href="http://localhost/php/blog-piscine/controller/AddArticle?id=2<?php echo $article['id']; ?>">
-                    Afficher l'article
-                </a>
+                    <!-- génère un lien pour accéder à la page qui affiche un article, en ajoutant l'id de l'article à la fin de l'url -->
+                    <a href="http://localhost/php/blog-piscine/controller/AddArticle?id=2<?php echo $article['id']; ?>">
+                        Afficher l'article
+                    </a>
             
                 </article>
 
