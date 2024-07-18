@@ -9,14 +9,26 @@
 </head>
 
 <body>
+    
+    <header>
 
-<header>
+        <!-- <h1>Blog de la piscine</h1> -->
 
-    <nav id="navHeader">
-        <ul id="ulHeader">
-            <li class="liHeader">Test</li>
-            <li class="liHeader">Test</li>
-            <li class="liHeader">Test</li>
-        </ul>
-    </nav>
-</header>
+        <div class="logo">
+            <img src="../public/assets/img/otter-solid.png" alt = logo>
+        </div>
+        
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Connexion</a></li>
+            </ul>
+        </nav>
+        
+    </header>
