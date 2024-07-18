@@ -1,7 +1,7 @@
 <?php
 
 require_once('../config/config.php');
-require_once('../model/articleRepository.php');
+require_once('../model/ArticleRepository.php');
 
 
 class IndexController {
@@ -13,7 +13,7 @@ class IndexController {
         $articles = $articleRepository -> findArticles();
        
         // on appelle la view qui affiche le HTML
-        require_once('../template/page/indexView.php');
+        require_once('../templates/page/indexView.php');
     }
 }
 

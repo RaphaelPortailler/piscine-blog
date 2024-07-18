@@ -1,4 +1,4 @@
-<?php require_once ('../template/partial/header.php');?>
+<?php require_once ('../templates/partial/header.php');?>
 
 <main>
 
@@ -30,4 +30,4 @@
 </main>
 
 
-<?php require_once ('../template/partial/footer.php');?>
+<?php require_once ('../templates/partial/footer.php');?>

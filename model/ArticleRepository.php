@@ -26,17 +26,17 @@ class ArticleRepository {
         return $articles;
     }
 
-    public function insert($titre, $content, $created_at) {
+    public function insert($titre, $content) {
 
         // On prépare la requête d'insertion des données avec des données temporaires
-        $sql = "INSERT INTO article (titre, content, created_at) VALUES (:titre, :content, :created_at)";
+        $sql = "INSERT INTO article (title, content) VALUES (:title, :content)";
         $stmt = $this->pdo->prepare($sql);
 
         // On remplace les paramètres précédemment entrés (données temporaires -> :title...) par les "vrais" paramètres.
         // On réalise cette action en plusieurs étapes pour sécuriser les données entrées par l'utilisateur et éviter l'injection SQL.
-        $stmt->bindParam(':titre', $titre);
+        $stmt->bindParam(':title', $titre);
         $stmt->bindParam(':content', $content);
-        $stmt->bindParam(':created_at', $created_at);
+        // $stmt->bindParam(':created_at', $created_at);
 
         // On exécute la requête et on enregistre le résultat dans une variable (booléen)
         $isRequestOk = $stmt->execute();

@@ -1,4 +1,4 @@
-<?php require_once('../template/partial/header.php'); ?>
+<?php require_once('../templates/partial/header.php'); ?>
 
     <main>
 
@@ -9,9 +9,9 @@
             <?php foreach($articles as $article) { ?>
 
                 <article class="articleBlog">
-                    <h2> <?php echo $article['titre']; ?> </h2>
-                    <!-- <p> <?php echo $article['content']; ?> </p> -->
-                    <p class="fontDate"> <?php echo $article['created_at'] ?> </p>
+                    <h2> <?php echo $article['title']; ?> </h2>
+                    <p> <?php echo $article['content']; ?> </p>
+            
                 </article>
 
             <?php } ?>
@@ -20,4 +20,4 @@
         
     </main>
 
-<?php require_once('../template/partial/footer.php'); ?>
+<?php require_once('../templates/partial/footer.php'); ?>

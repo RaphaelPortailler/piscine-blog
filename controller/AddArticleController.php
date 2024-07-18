@@ -1,7 +1,7 @@
 <?php
 
 require_once ('../config/config.php');
-require_once ('../model/articleRepository.php');
+require_once ('../model/ArticleRepository.php');
 
 class AddArticleController
 {
@@ -20,7 +20,7 @@ class AddArticleController
             $isRequestOk = $articleRepository -> insert($titre, $content, $created_at);
         }
 
-        require_once('../template/page/addArticleView.php');
+        require_once('../templates/page/addArticleView.php');
     }
 
 }
