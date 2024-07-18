@@ -24,11 +24,12 @@ class AddArticleController
     }
 
     public function showArticle() {
+
+        $id = $_GET['id'];
         // nouvelle instance "d'ArticleRepository"
         $articleRepository = new ArticleRepository();
         // on viens recuperer l'article avec l'id numéro 2 
-        $article = $articleRepository->findOneById(2);
-
+        $article = $articleRepository->findOneById($id);
         require_once('../templates/page/showArticleView.php');
     }
 
@@ -36,4 +37,4 @@ class AddArticleController
 
 
 $articleController = new AddArticleController();
-$articleController -> addArticle();
+$articleController -> showArticle();

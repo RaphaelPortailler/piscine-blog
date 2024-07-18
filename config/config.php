@@ -18,7 +18,7 @@ class DbConnection {
 
     // La méthode __construct est appelée à chaque création d'une nouvelle instance de la classe
     function __construct() {
-            $this->dsn = 'mysql:host=localhost:3306;dbname=piscine_blog_php';
+            $this->dsn = 'mysql:host=localhost:8889;dbname=piscine_blog_php';
             $this->username = 'root';
             $this->password = 'root';
     }
