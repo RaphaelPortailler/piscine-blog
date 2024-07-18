@@ -19,7 +19,7 @@ img {
 h1 {
     text-align: center;
     margin: 2% 0;
-    color: rgb(40, 70, 236);
+    color: rgb(150, 150, 150);
     text-transform: uppercase;
 }
 
@@ -45,10 +45,10 @@ p {
 /* --------------- HEADER --------------- */
 header {
     /* background-color: rgb(145, 154, 208); */
-    background-color: rgb(255, 213, 88);
+    background-color: rgb(150, 150, 150);
     color: rgb(40, 70, 236);
     text-align: center;
-
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,7 +100,7 @@ header {
 
     .articleBlog {
         width: 28%;
-        background-color: rgba(251, 221, 131, 0.662);
+        background-color: rgb(150, 150, 150);
         border-radius: 30px;
         margin: 3% auto;
         padding: 10px 20px;
@@ -138,7 +138,7 @@ header {
     justify-content: center;
     align-items: center;
     /* background-color: rgb(232, 204, 121); */
-    background-color: rgb(255, 213, 88);
+    background-color: rgb(150, 150, 150);
     color: rgb(40, 70, 236);
 
     /* position: fixed;

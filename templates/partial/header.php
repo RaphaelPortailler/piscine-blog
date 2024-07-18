@@ -14,11 +14,6 @@
 
         <!-- <h1>Blog de la piscine</h1> -->
 
-        <div class="logo">
-            <img src="../public/assets/img/otter-solid.png" alt = logo>
-        </div>
-        
-
         <nav>
             <ul>
                 <li><a href="">Home</a></li>

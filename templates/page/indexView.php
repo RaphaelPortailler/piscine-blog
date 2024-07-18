@@ -6,15 +6,21 @@
 
         <section id="articles">
 
-            <?php foreach($articles as $article) { ?>
+		<h2>Les derniers articles</h2>
 
-                <article class="articleBlog">
+	    	<?php foreach($articles as $article) { ?>
+
+                <article>
+                    <h2><?php echo $article['title']; ?></h2>
                     <!-- génère un lien pour accéder à la page qui affiche un article, en ajoutant l'id de l'article à la fin de l'url -->
-                    <a href="http://localhost/php/blog-piscine/controller/AddArticle?id=2<?php echo $article['id']; ?>">
+                    <a href="http://localhost/php/blog-piscine/public/show-article?id=<?php echo $article['id']; ?>">
                         Afficher l'article
                     </a>
-            
+                    <a href="http://localhost/php/blog-piscine/public/delete-article?id=<?php echo $article['id']; ?>">
+                        Supprimer l'article
+                    </a>
                 </article>
+
 
             <?php } ?>
 

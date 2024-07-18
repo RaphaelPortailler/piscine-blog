@@ -3,6 +3,7 @@
 require_once('../controller/ArticleController.php');
 require_once('../controller/indexController.php');
 
+
 // Récupérer l'URL demandée
 $requestUri = $_SERVER['REQUEST_URI'];
 
