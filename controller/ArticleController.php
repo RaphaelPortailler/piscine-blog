@@ -3,7 +3,7 @@
 require_once ('../config/config.php');
 require_once ('../model/ArticleRepository.php');
 
-class AddArticleController
+class ArticleController
 {
     public function addArticle() {
 
@@ -35,6 +35,3 @@ class AddArticleController
 
 }
 
-
-$articleController = new AddArticleController();
-$articleController -> showArticle();
