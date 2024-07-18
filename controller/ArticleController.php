@@ -17,10 +17,19 @@ class AddArticleController
 
             $articleRepository = new ArticleRepository();
             // on stocke dans la variable $isRequestOk le résultat issu de la méthode insert()
-            $isRequestOk = $articleRepository -> insert($titre, $content, $created_at);
+            $isRequestOk = $articleRepository -> insert($titre, $content);
         }
 
         require_once('../templates/page/addArticleView.php');
+    }
+
+    public function showArticle() {
+        // nouvelle instance "d'ArticleRepository"
+        $articleRepository = new ArticleRepository();
+        // on viens recuperer l'article avec l'id numéro 2 
+        $article = $articleRepository->findOneById(2);
+
+        require_once('../templates/page/showArticleView.php');
     }
 
 }
