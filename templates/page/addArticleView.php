@@ -1,18 +1,33 @@
-<?php require_once("../templates/partial/header.php"); ?>
+<?php require_once ('../template/partial/header.php');?>
 
-    <main>
+<main>
 
-        <h1>Ajouter un article</h1>
+    <h2>Ajouter un article</h2>
 
 
-        <?php if ($isRequestOK) { ?>
+    <form method="post">
 
-            <p>L'article a bien été enregistré en BDD</p>
+        <label> Titre
+            <input type="text" id="titre" name="titre" />
+        </label>
 
-        <?php } else {?>
-            <p>Article non enregistré</p>
-        <?php } ?>
+        <label> Contenu
+                <input type="text" id="content" name="content" />
+        </label>
 
-    </main>
+        <input type="submit"/>
 
-<?php require_once("../templates/partial/footer.php"); ?>
+    </form>
+
+
+
+    <?php if($isRequestOk) { ?>
+
+        <p class="messageOk">L'article a bien été enregistré en BDD</p>
+
+    <?php } ?>
+
+</main>
+
+
+<?php require_once ('../template/partial/footer.php');?>

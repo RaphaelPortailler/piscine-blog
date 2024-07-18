@@ -1,72 +1,152 @@
-*{
+
+/* @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+} */
+
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
 }
 
-                                    /* HEADER */
-#navHeader{
-    height: 15vh;
-    background-color: beige;
-    padding: 30px;
+/* --------------- Général --------------- */
+img {
+    width: 100%;
 }
 
-#ulHeader{
-    display: flex;
-    justify-content: space-around;
-}
-
-.liHeader{
-    color: brown;
-}
-                                    /* MAIN */
-
-
-#h1Main{
+h1 {
     text-align: center;
-    color: red;
-    padding: 30px;
+    margin: 2% 0;
+    color: rgb(40, 70, 236);
+    text-transform: uppercase;
 }
 
-#h2Main{
+
+h2 {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
+    text-transform: uppercase;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.articleBDD{
-    background-color: brown;
-    width: 30%;
+h3 {
     text-align: center;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-    transition: all 0.8s ease;
 }
 
-.articleBDD:hover{
-    color: rgb(229, 196, 89);
-    transform: scale(1.2);
-}
-
-                                    /* FOOTER */
-
-footer{
-    background-color: beige;
-    height: 15vh;
-    padding: 30px;
+p {
+    color : rgb(40, 70, 236);
+    font-size: 16px;
 }
 
 
-#ulFooter{
+
+
+/* --------------- HEADER --------------- */
+header {
+    /* background-color: rgb(145, 154, 208); */
+    background-color: rgb(255, 213, 88);
+    color: rgb(40, 70, 236);
+    text-align: center;
+
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 6%;
+    padding: 1%;
+}
+
+    /* ------ LIST - UL - LI ------ */
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    li {
+        text-decoration: none;
+        padding: 5px 20px;
+        /* color: blanchedalmond; */
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(40, 70, 236);
+        font-size: 15px;
+    }
+
+
+
+  /* --------------- MAIN --------------- */
+
+    /* ------ ARTICLE ------ */
+
+    #articles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fontDate {
+        font-size: 16px;
+        text-align: center;
+        color: grey;
+    }
+
+    .articleBlog {
+        width: 28%;
+        background-color: rgba(251, 221, 131, 0.662);
+        border-radius: 30px;
+        margin: 3% auto;
+        padding: 10px 20px;
+        transition: all 0.8s ease;
+    }
+
+    .articleBlog:hover {
+        background-color: rgba(40, 70, 236, 0.6);
+        transform: scale(1.05);
+    }
+
+
+    /* --------------- addArticleView --------------- */
+    form {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .messageOk {
+        color : rgb(40, 70, 236);
+        font-size: 16px;
+        padding: 6px 0 20px 0;
+        text-align: center;
+    }
+
+
+
+
+
+/* --------------- FOOTER --------------- */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(232, 204, 121); */
+    background-color: rgb(255, 213, 88);
+    color: rgb(40, 70, 236);
+
+    /* position: fixed;
+    bottom: 0; */
+}
+
+.logoFooter {
+    width: 3%;
+    padding: 1%;
+    color: rgba(43, 178, 212, 0.684);
 }

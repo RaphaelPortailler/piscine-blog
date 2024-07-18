@@ -1,10 +1,11 @@
 <footer>
-    <nav id="navFooter">
-        <ul id="ulFooter">
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">Politiques de confidentialité</a></li>
-        </ul>
-    </nav>
+
+<p> © La Piscine 2024 </p>
+
+<div class="logoFooter">
+    <img src="../public/assets/img/otter-solid.svg" alt="logo">
+</div>
+
 </footer>
 
 </body>
