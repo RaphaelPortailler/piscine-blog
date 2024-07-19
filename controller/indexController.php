@@ -13,7 +13,13 @@ class IndexController {
         $articles = $articleRepository -> findArticles();
        
         // on appelle la view qui affiche le HTML
-        require_once('../templates/page/indexView.php');
+
+        $loader = new \Twig\Loader\FilesystemLoader('../templates');
+        $twig = new \Twig\Environment($loader);
+
+        echo $twig->render('page/index.html.twig', ['articles' => $articles]);
+
+        // require_once('../templates/page/indexView.php');
     }
 }
 

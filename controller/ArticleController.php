@@ -20,7 +20,12 @@ class ArticleController
             $isRequestOk = $articleRepository -> insert($titre, $content);
         }
 
-        require_once('../templates/page/addArticleView.php');
+        $loader = new \Twig\Loader\FilesystemLoader('../templates');
+        $twig = new \Twig\Environment($loader);
+
+        echo $twig->render('page/addArticleView.html.twig', ['isRequestOk' => $isRequestOk]);
+
+        // require_once('../templates/page/addArticleView.php');
     }
 
     public function showArticle() {
@@ -30,7 +35,13 @@ class ArticleController
         $articleRepository = new ArticleRepository();
         // on viens recuperer l'article avec l'id numéro 2 
         $article = $articleRepository->findOneById($id);
-        require_once('../templates/page/showArticleView.php');
+
+        $loader = new \Twig\Loader\FilesystemLoader('../templates');
+        $twig = new \Twig\Environment($loader);
+
+        echo $twig->render('page/showArticleView.html.twig', ['article' => $article]);
+
+        // require_once('../templates/page/showArticleView.php');
     }
 
 }
