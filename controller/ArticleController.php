@@ -3,8 +3,9 @@
 require_once ('../config/config.php');
 require_once ('../model/ArticleRepository.php');
 
-class ArticleController
-{
+class ArticleController{
+
+    
     public function addArticle() {
 
         $isRequestOk = false;
